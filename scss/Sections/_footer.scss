@@ -1,0 +1,17 @@
+@function font-size($size) {
+    @return map-get($font-sizes, $size );
+}
+
+footer {
+    padding-top: 80px;
+
+    & .rights {
+        max-width: 1132.006px;
+        font-size: font-size(extrasmall);
+        font-family: $poppins-family;
+        margin-top: 107px;
+        border-top: 1px solid #FFFFFF33;
+        padding: 38px;
+    }
+   
+}

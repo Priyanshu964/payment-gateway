@@ -1,0 +1,15 @@
+
+
+.funFact {
+    text-align: center;
+    padding: 48px 0;
+    & .display-5 {
+        font-weight: 700;
+    }
+
+    & h3 {
+        font-size: 30px;
+        font-family: $poppins-family;
+        font-weight: 400;
+    }
+}

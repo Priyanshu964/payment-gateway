@@ -1,0 +1,17 @@
+
+@function font-size($size){
+    @return map-get($font-sizes, $size );
+}
+
+
+.process-list{
+    padding: 35px;
+    min-height: 196px;
+    border-left: 8px solid $primary;
+    font-family: $poppins-family;
+   
+    & .para{
+        font-size: font-size(small);
+        margin-top: 24px;
+    }
+}

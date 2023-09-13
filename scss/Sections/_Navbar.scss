@@ -1,0 +1,20 @@
+
+.menu{
+    z-index: 5;
+  
+ &-item{
+    li{
+        a{
+            color: $white;
+           margin: 0 10px;
+           &:hover{
+            color: $gray-500;
+           }
+        }
+    }
+ }
+}
+
+.scrolled{
+    backdrop-filter: blur(20px);
+}

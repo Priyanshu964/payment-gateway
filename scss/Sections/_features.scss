@@ -1,0 +1,46 @@
+
+
+
+@function font-size($size){
+    @return map-get($font-sizes, $size );
+}
+
+// Background
+
+
+
+
+.features{
+   
+    & .col-8{
+        font-size: font-size("medium");
+    }
+  
+}
+
+@media only screen and (max-width:990px){
+    .features{
+   
+        & .col-8{
+            font-size: 18px;
+        }
+      
+    }
+}
+.feature2, .feature1{
+    border-right: 1px solid #FFFFFF1A;
+ 
+}
+@media only screen and (max-width:768px) {
+    .features{
+        position: relative;
+        & .col-10{
+            font-size: 20px;
+        }
+       
+    }
+    .feature2 ,.feature1{
+        border: none;
+    }
+    
+}

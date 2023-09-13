@@ -1,0 +1,52 @@
+
+@function font-size($size){
+    @return map-get($font-sizes, $size );
+}
+// background
+
+.ellipses{
+    & .ellipse8{
+        position: absolute;
+        bottom: 80px;
+        left: 30px;
+    }
+    &-ellipse6{
+        position: absolute;
+        right: 50px;
+        bottom: 200px;
+    }
+}
+
+.display-6{
+    line-height: 58px;
+   
+ }
+ .card{
+ border: none;
+ max-height: 587px;
+ max-width: 417px;
+
+    &-img-top{
+        padding: 37px 62px 0 34px;
+    }
+     &-title{
+         color: $white;
+         font-size: font-size(medium);
+     }
+     &-text{
+         font-size: font-size(small);
+         color: $white7;
+     }
+     &:hover{
+         background: linear-gradient(rgba(3, 6, 39,0.45) 30%, rgb(3,6,39,0.25) );
+     }
+ }
+
+
+ @media only screen and (max-width:576px){
+    .ellipses{
+        &-ellipse6{
+            display: none;
+        }
+    }
+ }
